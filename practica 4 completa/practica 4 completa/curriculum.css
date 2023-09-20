@@ -1,0 +1,34 @@
+:root{
+    --blanco: #fff;
+    --oscuro: #a79797;
+    --primario: #ffc107;
+    --secundario: #0097a7;
+    --gris: #757575;
+    --grisclaro: #a9a6a6;
+    --negro: #090909;
+}
+
+@media (min-width: 768px){
+    .curriculum {
+        display: grid;
+        grid-template-columns: repeat(3, 500px);
+        margin: auto 17%;
+    }
+}
+
+.estudios__grado {
+    color: var(--negro)
+}
+
+.icono_curriculum {
+    display: flex;
+    justify-content: center;
+    padding-top: 13rem;
+}
+
+.icono_curriculum svg {
+    background-color: var(--primario);
+    height: 56%;
+    width: 41%;
+    border-radius: 106px;
+}

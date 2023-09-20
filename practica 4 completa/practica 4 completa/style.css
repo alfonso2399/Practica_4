@@ -1,0 +1,270 @@
+
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:root{
+    --blanco: #fff;
+    --oscuro: #a79797;
+    --primario: #ffc107;
+    --secundario: #0097a7;
+    --gris: #757575;
+    --grisclaro: #a9a6a6;
+    --negro: #090909;
+}
+
+.sombra{
+    -webkit-box-shadow: 4px 10px 5px 0px rgba(0,0,0,43);
+    -moz-box-shadow: 4px 10px 5px 0px rgba(0,0,0,43);
+    box-shadow: 4px 10px 5px 0px rgba(0,0,0,43);
+    background-color: var(--blanco);
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+h1{
+    font-size: 3.8rem;
+    font-weight: bold;
+}
+
+h2{
+    font-size: 2.8rem;
+    color: var(--blanco);
+}
+
+h3{
+    font-size: 1.8rem;
+}
+
+h1,h2,h3{
+    text-align: center;
+}
+
+.titulo span{
+    font-size: 2rem;
+}
+
+.contenedor{
+    width: 120rem;
+    margin: 0 auto;
+}
+
+.nav-bg{
+    font-size: 1.5rem;
+    background-color: var(--secundario);
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0 1rem 0;
+}
+
+.navegacion-principal a{
+   text-decoration: none;
+   margin-left: 1rem;
+   color: rgb(255, 250, 250);
+}
+
+.navegacion-principal a:hover {
+    background-color: var(--primario);
+    color: var(--negro);
+}
+
+@media (min-width: 768px){
+    .navegador-principal{
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+}
+.navegador-principal a{
+    color: var(--negro);
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 1rem;
+}
+
+.navegador-principal a:hover{
+    background-color: var(--primario);
+    color: var(--oscuro);
+}
+
+.free{
+    background-image: url(../imagen/imagen.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 20rem;
+    padding: 8rem;
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.contenedor-free{
+    position: absolute;
+    background-color: rgb(0, 0, 0 /50%);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.free p {
+    display: block;
+    text-align: center;
+}
+
+.free svg {
+    background-color: var(--primario);
+    border-radius: 1rem;
+}
+
+.free a {
+    display: block;
+    text-align: center;
+    width: 100px;
+    margin: 1rem auto 1rem auto;
+}
+
+.contenedor-free h2, .contenedor-free p{
+    color: var(--blanco);
+}
+
+@media(min-width: 768px){
+    .servicios{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 1rem;
+    }
+}
+
+.boton_c{
+    background-color: var(--secundario);
+    color: var(--blanco);
+    padding: 1rem 3rem;
+    font-size: 1.5rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: .5rem;
+    width: 80%;
+    text-align: center;
+    border: none;
+}
+
+@media(min-width: 480px)
+{
+    .boton_c{
+        width: auto;
+    }
+}
+.servicio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.servicio h3{
+    color: var(--secundario);
+    font-weight: normal;
+}
+
+.servicio p{
+    line-height: 5rem;
+    text-align: center;
+}
+
+.servicio .iconos{
+    height: 15rem;
+    width: 15rem;
+    background-color: var(--primario);
+    border-radius: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+.formulario{
+    background-color: var(--gris);
+    width: min(60rem, 100%);
+    margin: 0 auto;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.formulario fieldset{
+    border: none;
+}
+
+.formulario legend{
+    text-align: center;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    color: var(--primario);
+}
+
+.campo{
+    margin-bottom: 1rem;
+}
+
+.campo label{
+    color: var(--blanco);
+    font-weight: bold;
+    margin-bottom: .5rem;
+    display: block;
+}
+
+.input-text{
+    width: 92%;
+    border: none;
+    padding: 1.5rem;
+    border-radius: .5rem;
+}
+
+link :hover{
+    font-size: 2rem;
+}
+
+
+.enviar .boton_c{
+    width: 50%;
+    
+}
+
+.pte{
+    text-align: center;
+}
+
+.partes{
+    font-size: 2rem;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+article{
+    border: #090909;
+}
+
+p{
+    font-size: 1.5rem;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.contenedor_mapa {
+    display: flex;
+    justify-content: center;
+    padding-top: 11rem;
+}
+
+
+
